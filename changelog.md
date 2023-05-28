@@ -12,3 +12,4 @@ Created on May 22, 2023
 - Initial Development: lang changer + color theme implemented on May 28, 2023 -> **0.11**
 - Initial Development: test custom domain + add 404 page -> **0.111**
 - Initial Development: hold the public view with simple coming soon page -> **0.112**
+- Initial Development: minor fixed hold the public view with simple coming soon page -> **0.1121**
