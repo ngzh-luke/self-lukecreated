@@ -23,242 +23,227 @@
     <!-- Bootstrap color-modes JS file -->
     <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
     <title>LukeCreated - Home</title>
-
-    <!-- includes coming soon -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway"
-    />
+    <!-- includes custom styling -->
+    <link href="/basestyle.css" rel="stylesheet" />
   </head>
 
-  <body onload="setLangView(), defaulter()">
-    <!-- coming-soon -->
-    <section id="coming-soon" class="pt-5 my-5 pb-4" style="text-align: center">
-      <div class="vstack gap-2">
-        <div
-          class="w3-display-topmiddle w3-animate-opacity w3-display-top w3-text-teal"
-        >
-          <h1 class="w3-jumbo w3-animate-middle">COMING SOON</h1>
-          <hr
-            class="w3-round w3-border-grey w3-grey"
-            style="margin: auto; width: 50%; height: 3px"
-          />
-          <br />
-          <div class="w3-animate-opacity w3-text-blue">
-            <h1 class="w3-wide w3-animate-bottom">LukeCreated</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Color-changer -->
-    <div id="color-changer">
-      <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-        <symbol id="check2" viewBox="0 0 16 16">
-          <path
-            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
-          ></path>
-        </symbol>
-        <symbol id="circle-half" viewBox="0 0 16 16">
-          <path
-            d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
-          ></path>
-        </symbol>
-        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-          <path
-            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
-          ></path>
-          <path
-            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
-          ></path>
-        </symbol>
-        <symbol id="sun-fill" viewBox="0 0 16 16">
-          <path
-            d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-          ></path>
-        </symbol>
-      </svg>
-      <div
-        class="dropdown position-fixed bottom-0 start-0 mb-3 mx-3 bd-mode-toggle"
-      >
-        <!-- btn-bd-primary -->
+  <body onload="setLangView()">
+    <nav
+      class="navbar navbar-expand-sm border border-top-0 border-2 border-warning"
+      aria-label="Offcanvas navbar large"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">LukeCreated</a>
         <button
-          class="btn btn-warning py-2 dropdown-toggle d-flex align-items-center"
-          id="bd-theme"
+          class="navbar-toggler"
           type="button"
-          aria-expanded="false"
-          data-bs-toggle="dropdown"
-          aria-label="Toggle theme (dark)"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+          aria-label="Toggle navigation"
         >
-          <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
-            <use href="#moon-stars-fill"></use>
-          </svg>
-          <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          <span class="navbar-toggler-icon"> </span>
         </button>
-        <ul
-          class="dropdown-menu dropdown-menu-end shadow"
-          aria-labelledby="bd-theme-text"
+        <div
+          class="offcanvas offcanvas-top text"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+          style="max-width: 100%; width: auto; height: 56%; max-height: 80%"
         >
-          <li>
+          <div class="offcanvas-header">
+            <h3
+              class="offcanvas-title"
+              id="offcanvasNavbar2Label"
+              style="font-family: Krub, sans-serif"
+            >
+              LukeCreated
+            </h3>
             <button
               type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-theme-value="light"
-              aria-pressed="false"
-            >
-              <svg
-                class="bi me-2 opacity-50 theme-icon"
-                width="1em"
-                height="1em"
-              >
-                <use href="#sun-fill"></use>
-              </svg>
-              Light
-              <svg class="bi ms-auto d-none" width="1em" height="1em">
-                <use href="#check2"></use>
-              </svg>
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              class="dropdown-item d-flex align-items-center active"
-              data-bs-theme-value="dark"
-              aria-pressed="true"
-            >
-              <svg
-                class="bi me-2 opacity-50 theme-icon"
-                width="1em"
-                height="1em"
-              >
-                <use href="#moon-stars-fill"></use>
-              </svg>
-              Dark
-              <svg class="bi ms-auto d-none" width="1em" height="1em">
-                <use href="#check2"></use>
-              </svg>
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-theme-value="auto"
-              aria-pressed="false"
-            >
-              <svg
-                class="bi me-2 opacity-50 theme-icon"
-                width="1em"
-                height="1em"
-              >
-                <use href="#circle-half"></use>
-              </svg>
-              Auto
-              <svg class="bi ms-auto d-none" width="1em" height="1em">
-                <use href="#check2"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <section id="body">
-      <!-- Language-changer -->
-      <button onclick="setLangView()" class="w3-button w3-circle w3-black">
-        Change Lang
-      </button>
-      <nav></nav>
-      <div>
-        <th-con>Thai</th-con>
-        <en-con>Eng</en-con>
-      </div>
-      <!-- sidebar -->
-      <main class="d-flex flex-nowrap">
-        <div id="sidebar">
-          <div
-            class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
-            style="width: 280px"
-          >
-            <a
-              href="/"
-              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-            >
-              <svg class="bi pe-none me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-              </svg>
-              <span class="fs-4">Sidebar</span>
-            </a>
-            <hr />
-            <ul class="nav nav-pills flex-column mb-auto">
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- offcanvas-body -->
+          <div class="offcanvas-body" id="offcanvas-body">
+            <ul class="navbar-nav justify-content-end pe-3">
               <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                  <svg class="bi pe-none me-2" width="16" height="16">
-                    <use xlink:href="#home"></use>
-                  </svg>
-                  Home
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
                 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16">
-                    <use xlink:href="#speedometer2"></use>
-                  </svg>
-                  Dashboard
-                </a>
+                <hr class="divider" />
               </li>
-              <li>
-                <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16">
-                    <use xlink:href="#table"></use>
-                  </svg>
-                  Orders
-                </a>
+              <!-- Language-changer -->
+              <li id="language-changer" class="nav-item d-flex">
+                <button
+                  onclick="setLangView()"
+                  class="w3-button w3-circle w3-deep-orange"
+                >
+                  ไทย/EN
+                </button>
               </li>
-              <li>
-                <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16">
-                    <use xlink:href="#grid"></use>
-                  </svg>
-                  Products
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-body-emphasis">
-                  <svg class="bi pe-none me-2" width="16" height="16">
-                    <use xlink:href="#people-circle"></use>
-                  </svg>
-                  Customers
-                </a>
+              <br />
+              <!-- theme-changer -->
+              <li id="theme-changer" class="nav-item d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                  <symbol id="check2" viewBox="0 0 16 16">
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                    ></path>
+                  </symbol>
+                  <symbol id="circle-half" viewBox="0 0 16 16">
+                    <path
+                      d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+                    ></path>
+                  </symbol>
+                  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                    ></path>
+                    <path
+                      d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                    ></path>
+                  </symbol>
+                  <symbol id="sun-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                    ></path>
+                  </symbol>
+                </svg>
+                <div class="dropdown mx-2 bd-mode-toggle">
+                  <button
+                    class="btn btn-info py-1 dropdown-toggle d-flex align-items-center"
+                    id="bd-theme"
+                    type="button"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    aria-label="Toggle theme (dark)"
+                  >
+                    <svg
+                      class="bi my-1 theme-icon-active"
+                      width="1em"
+                      height="1em"
+                    >
+                      <use href="#moon-stars-fill"></use>
+                    </svg>
+                    <span class="visually-hidden" id="bd-theme-text"
+                      >Toggle theme</span
+                    >
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end shadow"
+                    aria-labelledby="bd-theme-text"
+                  >
+                    <li>
+                      <button
+                        type="button"
+                        class="dropdown-item d-flex align-items-center"
+                        data-bs-theme-value="light"
+                        aria-pressed="false"
+                      >
+                        <svg
+                          class="bi me-2 opacity-50 theme-icon"
+                          width="1em"
+                          height="1em"
+                        >
+                          <use href="#sun-fill"></use>
+                        </svg>
+                        Light
+                        <svg class="bi ms-auto d-none" width="1em" height="1em">
+                          <use href="#check2"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="dropdown-item d-flex align-items-center active"
+                        data-bs-theme-value="dark"
+                        aria-pressed="true"
+                      >
+                        <svg
+                          class="bi me-2 opacity-50 theme-icon"
+                          width="1em"
+                          height="1em"
+                        >
+                          <use href="#moon-stars-fill"></use>
+                        </svg>
+                        Dark
+                        <svg class="bi ms-auto d-none" width="1em" height="1em">
+                          <use href="#check2"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="dropdown-item d-flex align-items-center"
+                        data-bs-theme-value="auto"
+                        aria-pressed="false"
+                      >
+                        <svg
+                          class="bi me-2 opacity-50 theme-icon"
+                          width="1em"
+                          height="1em"
+                        >
+                          <use href="#circle-half"></use>
+                        </svg>
+                        Auto
+                        <svg class="bi ms-auto d-none" width="1em" height="1em">
+                          <use href="#check2"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
-            <hr />
-            <div class="dropdown">
-              Hi
-              <a
-                href="#"
-                class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-              </a>
-              <ul class="dropdown-menu text-small shadow">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-              </ul>
-            </div>
           </div>
         </div>
-      </main>
-    </section>
+      </div>
+    </nav>
+    <main id="body">
+      <content>
+        <th-con>Thai</th-con>
+        <en-con>Eng</en-con>
+      </content>
+      <!--  -->
+    </main>
   </body>
   <script>
     function defaulter() {
-      const ele = document.getElementById("body");
-      ele.style.visibility = "hidden";
+      const ele = document.getElementById("coming-soon");
+      ele.style.display = "none";
+      const body = document.getElementById("body");
+      body.style.display = "block";
     }
     function setLangView(language = "en") {
       const settingElement = document.getElementById("html-tag");

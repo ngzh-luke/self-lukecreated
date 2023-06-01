@@ -14,3 +14,4 @@ Created on May 22, 2023
 - Initial Development: hold the public view with simple coming soon page -> **0.112**
 - Initial Development: minor fixed hold the public view with simple coming soon page -> **0.1121**
 - Initial Development: mobile & desktop coming soon page optimized -> **0.1122**
+- Initial Development: navbar implementation started + some improvements-> **0.12**
