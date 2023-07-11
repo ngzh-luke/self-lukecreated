@@ -62,9 +62,12 @@
         ></path>
       </symbol>
     </svg>
+    <!-- includes custom JS functions-->
+    <script src="/lukecreated.js"></script>
   </head>
 
-  <body onload="setLangView(), defaulter()">
+  <body onload="defaulter(), setLangView()">
+    <!-- Navbar -->
     <nav
       class="navbar navbar-expand-sm border border-top-0 border-2 border-warning"
       aria-label="Offcanvas navbar large"
@@ -115,7 +118,9 @@
           <div class="offcanvas-body justify-content-end" id="offcanvas-body">
             <ul class="navbar-nav justify-content-end pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link active" aria-current="page" href="/"
+                  ><th-con>หน้าหลัก</th-con><en-con>Home</en-con></a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/about-contact.html">About/Contact</a>
@@ -144,7 +149,11 @@
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">3</a>
+                    <a
+                      class="dropdown-item"
+                      href="https://christmas2022app.lukecreated.com"
+                      >Christmas 2022 app</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -155,10 +164,10 @@
                   ไทย/EN
                 </button>
               </li>
-              <br />
+              <div class="mx-1 my-1"></div>
               <!-- theme-changer -->
               <li id="theme-changer" class="nav-item d-flex">
-                <div class="dropdown mx-2 bd-mode-toggle">
+                <div class="dropdown bd-mode-toggle">
                   <button
                     class="btn btn-sm btn-info py-1 dropdown-toggle d-flex align-items-center"
                     id="bd-theme"
@@ -245,30 +254,28 @@
                   </ul>
                 </div>
               </li>
-              <br />
+              <div class="mx-1 my-1"></div>
               <!-- other setting -->
-              <aside>
-                <li class="nav-item d-flex">
-                  <button
-                    class="btn btn-sm btn-secondary"
-                    onclick="cookiesNotice()"
+              <li class="nav-item d-flex">
+                <button
+                  class="btn btn-sm btn-secondary"
+                  onclick="cookiesNotice()"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-gear-fill mx-1 my-1"
+                    viewBox="0 0 16 16"
+                    width="1em"
+                    height="1em"
+                    id="gear"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      class="bi bi-gear-fill mx-1 my-1"
-                      viewBox="0 0 16 16"
-                      width="1em"
-                      height="1em"
-                      id="gear"
-                    >
-                      <path
-                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
-                      />
-                    </svg>
-                  </button>
-                </li>
-              </aside>
+                    <path
+                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -280,6 +287,17 @@
         <en-con>Eng</en-con>
       </content>
     </main>
+    <!-- Footer -->
+    <footer class="px-2 py-1 bg-info fixed-bottom" align="center" id="footer">
+      <!-- <span style="font-weight: bold">App Info</span><br />
+      <small>©Kittipich Aiumbhornsin</small> with
+      <a
+        class="link-danger"
+        target="_blank"
+        href="https://github.com/ngzh-luke/self-christmas2022_remaster/blob/main/license.md"
+        >license</a
+      > -->
+    </footer>
     <!-- Cookies notice -->
     <div class="toast-container bottom-0 end-0 mx-2 my-2" id="cookies-notice">
       <div
@@ -327,68 +345,4 @@
       </div>
     </div>
   </body>
-  <script>
-    function bandTooltip(hide = false) {
-      const tooltip = bootstrap.Tooltip.getInstance("#band");
-      tooltip.show();
-      if (hide == true) {
-        const tooltip = bootstrap.Tooltip.getInstance("#band");
-        tooltip.hide();
-      }
-    }
-    function cookiesNotice() {
-      const cookies = document.getElementById("cookiesNotice");
-      const toast = new bootstrap.Toast(cookies);
-      toast.show();
-    }
-    function defaulter() {
-      // enable global tooltip
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      );
-      const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-      );
-      // deal with `#band` tooltip
-      bandTooltip();
-      setTimeout(bandTooltip, 5000, true); // set autohide
-      // toast
-      const cookiesNotice = document.getElementById("cookiesNotice");
-      const toast = new bootstrap.Toast(cookiesNotice);
-      toast.show();
-    }
-    function setLangView(language = "en") {
-      const settingElement = document.getElementById("html-tag");
-      const THcon = document.getElementsByTagName("th-con");
-      const ENcon = document.getElementsByTagName("en-con");
-      const size = THcon.length > ENcon.length ? THcon.length : ENcon.length; // get biggest size
-      console.log(`biggest content amount: ${size}`);
-      if (settingElement.getAttribute("lang") == "en") {
-        settingElement.setAttribute("lang", "th");
-      } else {
-        settingElement.setAttribute("lang", "en");
-      }
-      for (let i = 0; i < size; ++i) {
-        if (settingElement.getAttribute("lang") == "th") {
-          // not en
-          try {
-            // prevent out of index err or other err
-            THcon[i].style.display = "block";
-            ENcon[i].style.display = "none";
-          } catch (error) {
-            console.log(error);
-          }
-        } else {
-          // en
-          try {
-            // prevent out of index err or other err
-            THcon[i].style.display = "none";
-            ENcon[i].style.display = "block";
-          } catch (error) {
-            console.log(error);
-          }
-        }
-      }
-    }
-  </script>
 </html>

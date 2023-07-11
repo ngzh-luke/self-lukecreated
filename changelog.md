@@ -16,3 +16,4 @@ Created on May 22, 2023
 - Initial Development: mobile & desktop coming soon page optimized -> **0.1122**
 - Initial Development: navbar implementation started + some improvements on June 1, 2023 -> **0.12**
 - Initial Development: navbar implementation continued + some improvements on June 2, 2023 -> **0.122**
+- Minor Changes: add hyperlink to `christmas2022app.lukecreated.com` and draft an about page with some progress for overall improvements on July 11, 2023 -> **0.123**
