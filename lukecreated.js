@@ -86,7 +86,7 @@ function changeLangView() {
 
   // set the desired lang at the head first
   if (getCookie("displayLang") == null) {
-    defineLang("en"); // if user is not set their prefer display lang then reset to default display lang (EN)
+    setCookie("displayLang", "en"); // if user is not set their prefer display lang then reset to default display lang (EN)
   }
   settingElement.setAttribute("lang", `${getCookie("displayLang")}`);
   newLang = settingElement.getAttribute("lang");
