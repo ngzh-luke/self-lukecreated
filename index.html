@@ -68,7 +68,7 @@
     <script src="/lukecreated.js"></script>
   </head>
 
-  <body onload="setLangView()">
+  <body onload="setLangView(`${getCookie('displayLang')}`)">
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-sm border border-top-0 border-2 border-warning"
