@@ -62,11 +62,13 @@
         ></path>
       </symbol>
     </svg>
+    <!-- includes Sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- includes custom JS functions-->
     <script src="/lukecreated.js"></script>
   </head>
 
-  <body onload="defaulter(), setLangView()">
+  <body onload="changeLangView()">
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-sm border border-top-0 border-2 border-warning"
@@ -123,7 +125,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about-contact.html">About/Contact</a>
+                <a class="nav-link" href="#About">About/Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/comingsoon.html">Projects</a>
@@ -160,9 +162,34 @@
               <hr class="divider" />
               <!-- Language-changer -->
               <li id="language-changer" class="nav-item d-flex">
-                <button onclick="setLangView()" class="btn btn-sm btn-success">
-                  ไทย/EN
-                </button>
+                <!-- <button onclick="changeLangView()" class="btn btn-sm btn-success">
+                  ไทย/EN/中文
+                </button> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-sm btn-success dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    ไทย/EN/中文
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" onclick="defineLang('th')"
+                        >ไทย</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" onclick="defineLang('en')">EN</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" onclick="defineLang('zh')"
+                        >中文</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
               <div class="mx-1 my-1"></div>
               <!-- theme-changer -->

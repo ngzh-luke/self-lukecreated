@@ -17,3 +17,4 @@ Created on May 22, 2023
 - Initial Development: navbar implementation started + some improvements on June 1, 2023 -> **0.12**
 - Initial Development: navbar implementation continued + some improvements on June 2, 2023 -> **0.122**
 - Minor Changes: add hyperlink to `christmas2022app.lukecreated.com` and draft an about page with some progress for overall improvements on July 11, 2023 -> **0.123**
+- Major Updates: language changer is now a draft implementation with cookies and reset into single page web plus comingsoon page is now also in progress of making available in different languages with overall improvements on July 13, 2023 -> **0.13**

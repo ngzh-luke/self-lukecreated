@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html-tag" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <!-- includes custom styling -->
     <link href="/basestyle.css" rel="stylesheet" />
+    <!-- includes custom JS functions-->
+    <script src="/lukecreated.js"></script>
     <!-- includes icons -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol
@@ -63,7 +65,7 @@
     </svg>
     <title>LukeCreated - Coming Soon</title>
   </head>
-  <body>
+  <body onload="changeLangView()">
     <!-- coming-soon -->
     <section id="coming-soon" class="pt-3 my-3 pb-4" style="text-align: center">
       <div class="vstack gap-2">
@@ -72,7 +74,7 @@
             class="w3-jumbo w3-animate-top"
             style="font-family: Krub, sans-serif"
           >
-            COMING SOON
+            <th-con>โปรดอดใจรอ</th-con><en-con>COMING SOON</en-con>
           </h1>
           <hr
             class="w3-round w3-border-grey w3-grey"
@@ -91,7 +93,9 @@
       </div>
       <div class="w3-display-bottom-middle w3-text-indigo">
         <a href="/"
-          ><button class="w3-btn w3-khaki w3-round-xlarge">Home</button></a
+          ><button class="w3-btn w3-khaki w3-round-xlarge">
+            <th-con>กลับหน้าหลัก</th-con><en-con>Home</en-con>
+          </button></a
         >
       </div>
     </section>
