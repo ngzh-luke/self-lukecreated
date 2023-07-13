@@ -179,6 +179,7 @@ function changeLangView() {
 function setLangView(lang = "en") {
   if (lang == null) {
     setCookie("displayLang", `en`);
+    changeLangView();
   }
   setCookie("displayLang", `${lang}`);
   console.log(
