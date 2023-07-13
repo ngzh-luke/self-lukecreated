@@ -68,7 +68,7 @@
     <script src="/lukecreated.js"></script>
   </head>
 
-  <body onload="changeLangView()">
+  <body onload="setLangView()">
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-sm border border-top-0 border-2 border-warning"
@@ -121,8 +121,9 @@
             <ul class="navbar-nav justify-content-end pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/"
-                  ><th-con>หน้าหลัก</th-con><en-con>Home</en-con></a
-                >
+                  ><th-con>หน้าหลัก</th-con><en-con>Home</en-con>
+                  <zh-con>【中文:home】</zh-con>
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#About">About/Contact</a>
@@ -176,15 +177,17 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" onclick="defineLang('th')"
+                      <a class="dropdown-item" onclick="setLangView('th')"
                         >ไทย</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" onclick="defineLang('en')">EN</a>
+                      <a class="dropdown-item" onclick="setLangView('en')"
+                        >ENG</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" onclick="defineLang('zh')"
+                      <a class="dropdown-item" onclick="setLangView('zh')"
                         >中文</a
                       >
                     </li>
@@ -312,6 +315,7 @@
       <content>
         <th-con>Thai</th-con>
         <en-con>Eng</en-con>
+        <zh-con>Chinese</zh-con>
       </content>
     </main>
     <!-- Footer -->

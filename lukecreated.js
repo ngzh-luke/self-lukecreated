@@ -63,9 +63,6 @@ function deleteCookie(cName, cPath = "/") {
     console.log(`>>> [Sys.cookies]: cookies '${cName}' not found!`);
   }
 }
-function defineLang(lang = "en") {
-  setCookie("displayLang", lang, "/displayLang");
-}
 function changeLangView() {
   // change display langauge to defined (desired) language by user
   const settingElement = document.getElementById("html-tag");
@@ -82,45 +79,76 @@ function changeLangView() {
     }
     return max;
   }; // get biggest size
-  console.log(`>>> [Sys.displayLang]: biggest content amount = ${size()}`);
-  let initialLang = "";
-  let success = false;
-  // set the desired lang at the head first
 
-  initialLang = settingElement.getAttribute("lang");
+  console.log(`>>> [Sys.displayLang]: biggest content amount = ${size()}`);
+  let newLang = "";
+  let success = false;
+
+  // set the desired lang at the head first
   if (getCookie("displayLang") == null) {
     defineLang("en"); // if user is not set their prefer display lang then reset to default display lang (EN)
   }
-  settingElement.setAttribute("lang", getCookie("displayLang"));
+  settingElement.setAttribute("lang", `${getCookie("displayLang")}`);
+  newLang = settingElement.getAttribute("lang");
 
   // read the desired lang from the head and change them
   for (let i = 0; i < size(); ++i) {
     if (settingElement.getAttribute("lang") == "th") {
-      // EN to TH
+      // to TH
       try {
         // prevent out of index err or other err
         THcon[i].style.display = "block";
         ENcon[i].style.display = "none";
+        ZHcon[i].style.display = "none";
         if (
           THcon[i].style.display == "block" &&
-          ENcon[i].style.display == "none"
+          ENcon[i].style.display == "none" &&
+          ZHcon[i].style.display == "none"
         ) {
           success = true;
+          console.log(
+            `>>> [Sys.displayLang]: display language is now changed to 'THAI'`
+          );
         }
       } catch (error) {
         console.log(error);
       }
     } else if (settingElement.getAttribute("lang") == "en") {
-      // TH to EN
+      // to EN
       try {
         // prevent out of index err or other err
         THcon[i].style.display = "none";
         ENcon[i].style.display = "block";
+        ZHcon[i].style.display = "none";
         if (
           ENcon[i].style.display == "block" &&
-          THcon[i].style.display == "none"
+          THcon[i].style.display == "none" &&
+          ZHcon[i].style.display == "none"
         ) {
           success = true;
+          console.log(
+            `>>> [Sys.displayLang]: display language is now changed to 'ENGLISH'`
+          );
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    } else if (settingElement.getAttribute("lang") == "zh") {
+      // to ZH
+      try {
+        // prevent out of index err or other err
+        THcon[i].style.display = "none";
+        ENcon[i].style.display = "none";
+        ZHcon[i].style.display = "block";
+        if (
+          ENcon[i].style.display == "none" &&
+          THcon[i].style.display == "none" &&
+          ZHcon[i].style.display == "block"
+        ) {
+          success = true;
+          console.log(
+            `>>> [Sys.displayLang]: display language is now changed to 'CHINESE'`
+          );
         }
       } catch (error) {
         console.log(error);
@@ -133,15 +161,31 @@ function changeLangView() {
   }
   // if lang is successfully changed
   if (success == true) {
-    switch (initialLang) {
-      case "th": // from TH to EN
+    switch (newLang) {
+      case "th": // to TH
+        alert("เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว");
+        break;
+      case "en": // to EN
         alert("Language is successfully changed to ENG");
         break;
-      case "en": // from EN to TH
-        alert("เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว");
+      case "zh": // to ZH
+        alert("中文");
         break;
       default:
         break;
     }
+  }
+}
+function setLangView(lang = "en") {
+  setCookie("displayLang", `${lang}`);
+  console.log(
+    `>>> [Sys.displayLang]: display language is now trigged to be changed to '${lang}'`
+  );
+  changeLangView();
+}
+function sessionTracking() {
+  if (getCookie("session") != null) {
+  } else {
+    setCookie("session");
   }
 }

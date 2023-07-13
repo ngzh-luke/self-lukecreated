@@ -1,6 +1,7 @@
 # lukecreated update history
 
-**Developed by Kittipich "Luke" Aiumbhornsin**
+Developed by __Kittipich "Luke" Aiumbhornsin__
+
 Created on May 22, 2023
 
 ---
@@ -18,3 +19,4 @@ Created on May 22, 2023
 - Initial Development: navbar implementation continued + some improvements on June 2, 2023 -> **0.122**
 - Minor Changes: add hyperlink to `christmas2022app.lukecreated.com` and draft an about page with some progress for overall improvements on July 11, 2023 -> **0.123**
 - Major Updates: language changer is now a draft implementation with cookies and reset into single page web plus comingsoon page is now also in progress of making available in different languages with overall improvements on July 13, 2023 -> **0.13**
+- Minor Updates: language changer is now implemented and functional with cookies and overall improvements with a draft of landing tracking system on July 14, 2023 -> **0.135**

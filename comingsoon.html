@@ -65,7 +65,7 @@
     </svg>
     <title>LukeCreated - Coming Soon</title>
   </head>
-  <body onload="changeLangView()">
+  <body onload="setLangView(`${getCookie('displayLang')}`)">
     <!-- coming-soon -->
     <section id="coming-soon" class="pt-3 my-3 pb-4" style="text-align: center">
       <div class="vstack gap-2">
@@ -74,7 +74,8 @@
             class="w3-jumbo w3-animate-top"
             style="font-family: Krub, sans-serif"
           >
-            <th-con>โปรดอดใจรอ</th-con><en-con>COMING SOON</en-con>
+            <th-con>โปรดอดใจรอ</th-con><en-con>COMING SOON</en-con
+            ><zh-con>【中文:coming soon】</zh-con>
           </h1>
           <hr
             class="w3-round w3-border-grey w3-grey"
@@ -94,7 +95,8 @@
       <div class="w3-display-bottom-middle w3-text-indigo">
         <a href="/"
           ><button class="w3-btn w3-khaki w3-round-xlarge">
-            <th-con>กลับหน้าหลัก</th-con><en-con>Home</en-con>
+            <th-con>กลับหน้าหลัก</th-con><en-con>Home</en-con
+            ><zh-con>【中文:home】</zh-con>
           </button></a
         >
       </div>
@@ -181,6 +183,36 @@
                 <use href="#yin-yang"></use>
               </svg>
             </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Language-changer -->
+    <div
+      id="language-changer"
+      class="dropdown position-fixed bottom-0 start-0 mb-3 mx-3 me-3 bd-mode-toggle"
+    >
+      <!-- <button onclick="changeLangView()" class="btn btn-sm btn-success">
+        ไทย/EN/中文
+      </button> -->
+      <div class="dropdown">
+        <button
+          class="btn btn-sm btn-success dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          ไทย/EN/中文
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" onclick="setLangView('th')">ไทย</a>
+          </li>
+          <li>
+            <a class="dropdown-item" onclick="setLangView('en')">ENG</a>
+          </li>
+          <li>
+            <a class="dropdown-item" onclick="setLangView('zh')">中文</a>
           </li>
         </ul>
       </div>
