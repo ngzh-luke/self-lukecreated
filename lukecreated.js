@@ -177,6 +177,9 @@ function changeLangView() {
   }
 }
 function setLangView(lang = "en") {
+  if (lang == null) {
+    setCookie("displayLang", `en`);
+  }
   setCookie("displayLang", `${lang}`);
   console.log(
     `>>> [Sys.displayLang]: display language is now trigged to be changed to '${lang}'`
