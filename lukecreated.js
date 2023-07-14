@@ -47,8 +47,11 @@ function getCookie(cName) {
   return null;
 }
 function setCookie(cName, cValue, cPath = "/") {
+  const d = new Date();
+  d.setTime(d.getTime() + 2 * 60 * 60 * 1000); // 2 hour
+  let expires = "expires=" + d.toUTCString();
   if (getCookie(cName) != null) {
-    document.cookie = `${cName}=${cValue}; path=${cPath};`;
+    document.cookie = `${cName}=${cValue}; ${expires}; path=${cPath};`;
     console.log(`>>> [Sys.cookies]: cookies '${cName}' is updated`);
   } else {
     document.cookie = `${cName}=${cValue}; path=${cPath};`;
@@ -84,10 +87,12 @@ function changeLangView() {
   let newLang = "";
   let success = false;
 
-  // set the desired lang at the head first
-  if (getCookie("displayLang") == null) {
+  // get the desired lang first
+  if (getCookie("displayLang") === "null") {
     setCookie("displayLang", "en"); // if user is not set their prefer display lang then reset to default display lang (EN)
+    alert("cookies are null");
   }
+  // set the prefered lang at head then
   settingElement.setAttribute("lang", `${getCookie("displayLang")}`);
   newLang = settingElement.getAttribute("lang");
 
@@ -157,6 +162,10 @@ function changeLangView() {
       console.log(
         ">>> [Sys.displayLang]: desired language is not yet available!"
       );
+      console.log(
+        ">>> [Sys.displayLang]: reset to the default display language ('en')"
+      );
+      setLangView();
     }
   }
   // if lang is successfully changed
@@ -176,16 +185,34 @@ function changeLangView() {
     }
   }
 }
+function setView(view = false) {
+  const wholeDoc = document.getElementById("whole-doc");
+  if (view == false) {
+    wholeDoc.style.visibility = "hidden";
+    // wholeDoc.style.display = "none";
+  } else {
+    wholeDoc.style.visibility = "visible";
+    // wholeDoc.style.display = "block";
+  }
+}
 function setLangView(lang = "en") {
-  if (lang == null) {
+  setView(false);
+  if (lang == "null" || lang == null) {
     setCookie("displayLang", `en`);
+    console.log(
+      `>>> [Sys.displayLang]: display language is now reset to be default language ('${getCookie(
+        "displayLang"
+      )}')`
+    );
+    changeLangView();
+  } else {
+    setCookie("displayLang", `${lang}`);
+    console.log(
+      `>>> [Sys.displayLang]: display language is now trigged to be changed to '${lang}'`
+    );
     changeLangView();
   }
-  setCookie("displayLang", `${lang}`);
-  console.log(
-    `>>> [Sys.displayLang]: display language is now trigged to be changed to '${lang}'`
-  );
-  changeLangView();
+  setView(true);
 }
 function sessionTracking() {
   if (getCookie("session") != null) {

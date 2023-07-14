@@ -21,3 +21,4 @@ Created on May 22, 2023
 - Major Updates: language changer is now a draft implementation with cookies and reset into single page web plus comingsoon page is now also in progress of making available in different languages with overall improvements on July 13, 2023 -> **0.13**
 - Minor Updates: language changer is now implemented and functional with cookies and overall improvements with a draft of landing tracking system on July 14, 2023 -> **0.135**
 - Minor Updates: fixed bugs on display language on July 14, 2023 -> **0.1352**
+- Minor Updates: fixed bugs on display language on fresh landing and set expires cookies time on July 14, 2023 -> **0.1353**

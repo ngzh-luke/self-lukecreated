@@ -20,6 +20,7 @@
     ></script>
     <!-- Bootstrap color-modes JS file -->
     <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
+    <!-- Page title -->
     <title>LukeCreated - Home</title>
     <!-- includes custom styling -->
     <link href="/basestyle.css" rel="stylesheet" />
@@ -67,8 +68,11 @@
     <!-- includes custom JS functions-->
     <script src="/lukecreated.js"></script>
   </head>
-
-  <body onload="setLangView(`${getCookie('displayLang')}`)">
+  <body
+    id="whole-doc"
+    onload="setLangView(`${getCookie('displayLang')}`)"
+    style="visibility: hidden"
+  >
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-sm border border-top-0 border-2 border-warning"
