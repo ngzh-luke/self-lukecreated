@@ -68,13 +68,6 @@
     <!-- includes custom JS functions-->
     <script src="/lukecreated.js"></script>
   </head>
-  <style>
-    #navbar-dropdown.dropdown-toggle::after {
-      /* remove dropdown button for navbar */
-      content: none;
-    }
-  </style>
-
   <body
     id="whole-doc"
     onload="setLangView(`${getCookie('displayLang')}`), cookiesNotice()"
@@ -82,7 +75,7 @@
   >
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-sm border border-top-0 border-2 border-warning"
+      class="navbar navbar-expand-md border border-top-0 border-2 border-warning"
       aria-label="Offcanvas navbar large"
     >
       <div class="container-fluid">
@@ -93,6 +86,7 @@
           data-bs-placement="bottom"
           data-bs-title="Click to go to Home"
           id="band"
+          style="font-weight: bolder"
           >LukeCreated</a
         >
         <button
@@ -340,23 +334,139 @@
         </div>
       </div>
     </nav>
+    <header class="mx-2 my-2">
+      <div
+        id="carouselCaptions"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/asset/images/luke1.JPG"
+              alt="picOfLuke"
+              style="background-size: cover"
+            />
+            <div class="carousel-caption text-start">
+              <h1 style="color: black">
+                <span
+                  style="
+                    color: rgb(5, 255, 217);
+                    font-weight: bold;
+                    font-style: italic;
+                    font-size: larger;
+                  "
+                >
+                  LukeCreated</span
+                >
+              </h1>
+              <p style="color: whitesmoke; font-weight: bold">
+                <th-con
+                  >ยินดีต้อนรับสู่ "LukeCreated"
+                  <span style="color: black">|</span>
+                  <span style="color: blue"
+                    >เว็ปไซต์ส่วนตัวที่ทุกคนประทับใจ</span
+                  ></th-con
+                >
+                <en-con
+                  >Welcome to "LukeCreated" <span style="color: black">|</span>
+                  <span style="color: blue"
+                    >Personal website that everyone impressed!</span
+                  ></en-con
+                >
+                <zh-con
+                  >欢迎到 “LukeCreated” <span style="color: black">|</span>
+                  <span style="color: blue">_?中文?_</span></zh-con
+                >
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/asset/images/luke1.JPG"
+              class="d-block w-100"
+              alt="picOfLuke"
+            />
+
+            <div class="carousel-caption">
+              <h1
+                id="carousel-caption-name"
+                class="p-3 bg-info rounded-pill bg-opacity-25"
+              >
+                <span style="font-weight: bolder; color: gold">
+                  <th-con style="font-size: normal"
+                    >กิตติพิชญ์ เอี่ยมพรสิน (Luke)</th-con
+                  ><en-con>Kittipich "Luke" Aiumbhornsin</en-con
+                  ><zh-con>倪耿釗（Luke）</zh-con>
+                </span>
+              </h1>
+              <p>
+                <th-con>ใช่แล้ว ผมเอง!</th-con><en-con>Yeah? It's me!</en-con
+                ><zh-con>_?中文?_</zh-con>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
     <main id="body">
       <content>
         <th-con>Thai</th-con>
         <en-con>Eng</en-con>
         <zh-con>Chinese</zh-con>
       </content>
+      <p style="color: black or white">
+        <th-con>ก่อตั้ง มีนาคม ๒๕๖๖</th-con><en-con>EST. May, 2023</en-con
+        ><zh-con>_?中文?_ 三月2023</zh-con>
+      </p>
     </main>
     <!-- Footer -->
-    <footer class="px-2 py-1 bg-info fixed-bottom" align="center" id="footer">
-      <!-- <span style="font-weight: bold">App Info</span><br />
-      <small>©Kittipich Aiumbhornsin</small> with
-      <a
-        class="link-danger"
-        target="_blank"
-        href="https://github.com/ngzh-luke/self-christmas2022_remaster/blob/main/license.md"
-        >license</a
-      > -->
+    <footer class="px-1 py-1 bg-info fixed-bottom" align="center" id="footer">
+      <small style="color: yellow; font-weight: bold"
+        >©Kittipich "Luke" Aiumbhornsin with
+        <a
+          class="link-danger"
+          target="_blank"
+          href="https://github.com/ngzh-luke/self-lukecreated/blob/main/LICENSE"
+          >license</a
+        ></small
+      >
+      <!-- <span style="font-weight: bold">App Info</span><br /> -->
     </footer>
     <!-- Cookies notice -->
     <div class="toast-container bottom-0 end-0 mx-2 my-2" id="cookies-notice">

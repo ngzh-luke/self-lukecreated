@@ -3,3 +3,30 @@
 body {
   font-family: "Krub", sans-serif, "Noto Serif SC", "Noto Serif TC", serif;
 }
+#navbar-dropdown.dropdown-toggle::after {
+  /* remove dropdown button for navbar */
+  content: none;
+}
+img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+}
+/* when on mobile */
+@media (max-width: 768px) {
+  .carousel-caption th-con,
+  .carousel-caption en-con {
+    font-size: small;
+  }
+  .carousel-caption zh-con {
+    font-size: smaller;
+  }
+  .carousel-caption p {
+    color: orangered;
+    font-weight: bold;
+  }
+  .carousel-caption h1#carousel-caption-name {
+    fill: none;
+    --bs-bg-opacity: 0; /* remove highlight when on mobile  */
+  }
+}
