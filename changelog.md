@@ -23,5 +23,6 @@ Created on May 22, 2023
 - Minor Updates: fixed bugs on display language on July 14, 2023 -> **0.1352**
 - Minor Updates: fixed bugs on display language on fresh landing and set expires cookies time on July 14, 2023 -> **0.1353**
 - Major Updates: fixed bugs on language changer and its notification + menu is available in different defined languages and overall improvements on July 14, 2023 -> **0.14**
-- Minor changes: translation in different defined languages is available for Cookies Notice banner on July 14, 2023 -> **0.141**
+- Minor Changes: translation in different defined languages is available for Cookies Notice banner on July 14, 2023 -> **0.141**
 - Major Updates: some details and pictures are added + all sections are planed to implement and overall improvements on July 14, 2023 -> **0.2**
+- Minor Changes: alert banner is now not a browser default instead replaced with SweetAlert2 and overall improvements on July 15, 2023 -> **0.21**

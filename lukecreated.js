@@ -195,13 +195,20 @@ function changeLangView(notice = false) {
   if (success == true && notice == true) {
     switch (newLang) {
       case "th": // to TH
-        alert("เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว");
+        // alert("เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว");
+        Swal.fire("สำเร็จแล้ว!", "เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว", "success");
         break;
       case "en": // to EN
-        alert("Language is successfully changed to ENG");
+        // alert("Language is successfully changed to ENG");
+        Swal.fire(
+          "Success!",
+          "Language is successfully changed to ENGLISH",
+          "success"
+        );
         break;
       case "zh": // to ZH
-        alert("语言已成功更改为中文");
+        // alert("语言已成功更改为中文");
+        Swal.fire("成功!", "语言已成功更改为中文", "success");
         break;
       default:
         break;
@@ -251,4 +258,8 @@ function sessionTracking() {
     `>>> [Sys.cookies]: session cookie is now = '${getCookie("session")}'`
   );
   cookiesNotice();
+}
+
+function testFunction() {
+  Swal.fire("Any fool can use a computer");
 }
