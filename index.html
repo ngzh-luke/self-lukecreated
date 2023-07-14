@@ -68,9 +68,16 @@
     <!-- includes custom JS functions-->
     <script src="/lukecreated.js"></script>
   </head>
+  <style>
+    #navbar-dropdown.dropdown-toggle::after {
+      /* remove dropdown button for navbar */
+      content: none;
+    }
+  </style>
+
   <body
     id="whole-doc"
-    onload="setLangView(`${getCookie('displayLang')}`)"
+    onload="setLangView(`${getCookie('displayLang')}`), cookiesNotice()"
     style="visibility: hidden"
   >
     <!-- Navbar -->
@@ -126,31 +133,46 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/"
                   ><th-con>หน้าหลัก</th-con><en-con>Home</en-con>
-                  <zh-con>【中文:home】</zh-con>
+                  <zh-con>主页</zh-con>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#About">About/Contact</a>
+                <a class="nav-link" href="#About">
+                  <th-con>เกี่ยวกับ/ติดต่อเรา</th-con
+                  ><en-con>About/Contact</en-con>
+                  <zh-con>关于/联系</zh-con>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/comingsoon.html">Projects</a>
+                <a class="nav-link" href="/comingsoon.html">
+                  <th-con>โปรเจค(ผลงาน)</th-con><en-con>Projects</en-con>
+                  <zh-con>项目</zh-con>
+                </a>
               </li>
               <li class="nav-item dropdown">
-                <a
+                <button
                   class="nav-link dropdown-toggle"
-                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  id="navbar-dropdown"
                 >
-                  More
-                </a>
+                  <th-con>อื่นๆ</th-con><en-con>More</en-con
+                  ><zh-con>更多</zh-con>
+                </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="/comingsoon.html">Blogs</a>
+                    <a class="dropdown-item" href="/comingsoon.html"
+                      ><th-con>บล็อค</th-con><en-con>Blogs</en-con>
+                      <zh-con>博文(博客)</zh-con>
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">
+                      <th-con>ยังไม่พร้อมใช้งาน</th-con
+                      ><en-con>Coming soon</en-con>
+                      <zh-con>即将到来</zh-con>
+                    </a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
@@ -159,8 +181,11 @@
                     <a
                       class="dropdown-item"
                       href="https://christmas2022app.lukecreated.com"
-                      >Christmas 2022 app</a
                     >
+                      <th-con>Christmas 2022 app</th-con
+                      ><en-con>Christmas 2022 app</en-con>
+                      <zh-con>圣诞2022app</zh-con>
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -181,18 +206,18 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" onclick="setLangView('th')"
+                      <a class="dropdown-item" onclick="setLangView('th', true)"
                         >ไทย</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" onclick="setLangView('en')"
+                      <a class="dropdown-item" onclick="setLangView('en', true)"
                         >ENG</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" onclick="setLangView('zh')"
-                        >中文</a
+                      <a class="dropdown-item" onclick="setLangView('zh', true)"
+                        >中文（简体）</a
                       >
                     </li>
                   </ul>
@@ -293,7 +318,7 @@
               <li class="nav-item d-flex">
                 <button
                   class="btn btn-sm btn-secondary"
-                  onclick="cookiesNotice()"
+                  onclick="cookiesNotice(true)"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -340,7 +365,7 @@
         role="alert"
         aria-live="assertive"
         aria-atomic="true"
-        data-bs-autohide="true"
+        data-bs-autohide="false"
         id="cookiesNotice"
       >
         <div class="toast-header">
@@ -361,12 +386,13 @@
             class="btn-close"
             data-bs-dismiss="toast"
             aria-label="Close"
+            disabled
           ></button>
         </div>
         <div class="toast-body">
           We use necessary cookies and relavant technology only (i.e. language,
-          theme) and can't be disabled. By using this website, you agree to let
-          us use cookies and relavant technology.
+          theme, etc.) and can't be disabled. By using this website, you agree
+          to let us use cookies and relavant technology.
           <div class="mt-2 pt-2 border-top">
             <button
               type="button"

@@ -63,9 +63,14 @@
         ></path>
       </symbol>
     </svg>
+    <!-- page title -->
     <title>LukeCreated - Coming Soon</title>
   </head>
-  <body id="whole-doc" onload="setLangView(`${getCookie('displayLang')}`)">
+  <body
+    id="whole-doc"
+    onload="setLangView(`${getCookie('displayLang')}`), cookiesNotice()"
+    style="visibility: hidden"
+  >
     <!-- coming-soon -->
     <section id="coming-soon" class="pt-3 my-3 pb-4" style="text-align: center">
       <div class="vstack gap-2">
@@ -75,7 +80,7 @@
             style="font-family: Krub, sans-serif"
           >
             <th-con>โปรดอดใจรอ</th-con><en-con>COMING SOON</en-con
-            ><zh-con>【中文:coming soon】</zh-con>
+            ><zh-con>即将到来</zh-con>
           </h1>
           <hr
             class="w3-round w3-border-grey w3-grey"
@@ -96,7 +101,7 @@
         <a href="/"
           ><button class="w3-btn w3-khaki w3-round-xlarge">
             <th-con>กลับหน้าหลัก</th-con><en-con>Home</en-con
-            ><zh-con>【中文:home】</zh-con>
+            ><zh-con>主页</zh-con>
           </button></a
         >
       </div>
@@ -206,13 +211,15 @@
         </button>
         <ul class="dropdown-menu">
           <li>
-            <a class="dropdown-item" onclick="setLangView('th')">ไทย</a>
+            <a class="dropdown-item" onclick="setLangView('th', true)">ไทย</a>
           </li>
           <li>
-            <a class="dropdown-item" onclick="setLangView('en')">ENG</a>
+            <a class="dropdown-item" onclick="setLangView('en', true)">ENG</a>
           </li>
           <li>
-            <a class="dropdown-item" onclick="setLangView('zh')">中文</a>
+            <a class="dropdown-item" onclick="setLangView('zh', true)"
+              >中文（简体）</a
+            >
           </li>
         </ul>
       </div>

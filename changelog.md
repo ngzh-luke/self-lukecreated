@@ -22,3 +22,4 @@ Created on May 22, 2023
 - Minor Updates: language changer is now implemented and functional with cookies and overall improvements with a draft of landing tracking system on July 14, 2023 -> **0.135**
 - Minor Updates: fixed bugs on display language on July 14, 2023 -> **0.1352**
 - Minor Updates: fixed bugs on display language on fresh landing and set expires cookies time on July 14, 2023 -> **0.1353**
+- Major Updates: fixed bugs on language changer and its notification + menu is available in different defined language and overall improvements on July 14, 2023 -> **0.14**

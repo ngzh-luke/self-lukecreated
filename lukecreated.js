@@ -8,10 +8,32 @@ function bandTooltip(hide = false) {
     tooltip.hide();
   }
 }
-function cookiesNotice() {
+function cookiesNotice(force = false) {
   const cookies = document.getElementById("cookiesNotice");
   const toast = new bootstrap.Toast(cookies);
-  toast.show();
+  if (force == true || force == "true") {
+    // if force to show, show
+    toast.show();
+    setCookie("cookies", "read");
+  } else if (
+    (force != true || force != "true") &&
+    (getCookie("cookies") != null || getCookie("cookies") != "null")
+  ) {
+    // if not force but acknowledge before, hide
+    toast.hide();
+  } else if (
+    (force != false || force != "false") &&
+    (getCookie("cookies") == null || getCookie("cookies") == "null")
+  ) {
+    // if force but not acknowledge before, show
+    toast.show();
+    setCookie("cookies", "read");
+  }
+  if (getCookie("cookies") == null || getCookie("cookies") == "null") {
+    // if not acknowledge before
+    toast.show();
+    setCookie("cookies", "read");
+  }
 }
 function showBandTooltip() {
   // enable global tooltip
@@ -25,9 +47,10 @@ function showBandTooltip() {
   bandTooltip();
   setTimeout(bandTooltip, 4500, true); // set autohide
   // toast
-  const cookiesNotice = document.getElementById("cookiesNotice");
-  const toast = new bootstrap.Toast(cookiesNotice);
-  toast.show();
+  // const cookiesNotice = document.getElementById("cookiesNotice");
+  // const toast = new bootstrap.Toast(cookiesNotice);
+  // toast.show();
+  cookiesNotice();
 }
 function getCookie(cName) {
   let name = cName + "=";
@@ -66,7 +89,7 @@ function deleteCookie(cName, cPath = "/") {
     console.log(`>>> [Sys.cookies]: cookies '${cName}' not found!`);
   }
 }
-function changeLangView() {
+function changeLangView(notice = false) {
   // change display langauge to defined (desired) language by user
   const settingElement = document.getElementById("html-tag");
   const THcon = document.getElementsByTagName("th-con");
@@ -169,7 +192,7 @@ function changeLangView() {
     }
   }
   // if lang is successfully changed
-  if (success == true) {
+  if (success == true && notice == true) {
     switch (newLang) {
       case "th": // to TH
         alert("เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว");
@@ -178,7 +201,7 @@ function changeLangView() {
         alert("Language is successfully changed to ENG");
         break;
       case "zh": // to ZH
-        alert("中文");
+        alert("语言已成功更改为中文");
         break;
       default:
         break;
@@ -195,7 +218,7 @@ function setView(view = false) {
     // wholeDoc.style.display = "block";
   }
 }
-function setLangView(lang = "en") {
+function setLangView(lang = "en", notice = false) {
   setView(false);
   if (lang == "null" || lang == null) {
     setCookie("displayLang", `en`);
@@ -204,19 +227,28 @@ function setLangView(lang = "en") {
         "displayLang"
       )}')`
     );
-    changeLangView();
+    changeLangView(notice);
   } else {
     setCookie("displayLang", `${lang}`);
     console.log(
       `>>> [Sys.displayLang]: display language is now trigged to be changed to '${lang}'`
     );
-    changeLangView();
+    changeLangView(notice);
   }
   setView(true);
 }
 function sessionTracking() {
-  if (getCookie("session") != null) {
+  let numb = getCookie("session");
+  if (numb == null || numb == "null") {
+    setCookie("session", "1");
   } else {
-    setCookie("session");
+    numb = Number(numb);
+    numb++;
+    setCookie("session", String(numb));
   }
+
+  console.log(
+    `>>> [Sys.cookies]: session cookie is now = '${getCookie("session")}'`
+  );
+  cookiesNotice();
 }
