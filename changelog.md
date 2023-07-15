@@ -26,3 +26,5 @@ Created on May 22, 2023
 - Minor Changes: translation in different defined languages is available for Cookies Notice banner on July 14, 2023 -> **0.141**
 - Major Updates: some details and pictures are added + all sections are planed to implement and overall improvements on July 14, 2023 -> **0.2**
 - Minor Changes: alert banner is now not a browser default instead replaced with SweetAlert2 and overall improvements on July 15, 2023 -> **0.21**
+- Minor Updates: bugs fixed and overall improvements on July 15, 2023 -> **0.22**
+- Major Updates: _?_ on July _?_, 2023 -> **0.3**

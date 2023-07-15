@@ -1,7 +1,9 @@
+/* styling sheet */
+
 /* include custom fonts */
 @import url("https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+SC:wght@200;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap");
 body {
-  font-family: "Krub", sans-serif, "Noto Serif SC", "Noto Serif TC", serif;
+  font-family: "Krub", "Noto Serif SC", "Noto Serif TC", sans-serif, serif;
 }
 #navbar-dropdown.dropdown-toggle::after {
   /* remove dropdown button for navbar */
@@ -22,7 +24,8 @@ img {
     font-size: smaller;
   }
   .carousel-caption p {
-    color: orangered;
+    /* color: orangered; */
+    color: white;
     font-weight: bold;
   }
   .carousel-caption h1#carousel-caption-name {

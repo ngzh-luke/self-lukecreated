@@ -1,5 +1,6 @@
 // lukecreated base scripts
 
+// band tooltip function that is a part of a full band tooltip function
 function bandTooltip(hide = false) {
   const tooltip = bootstrap.Tooltip.getInstance("#band");
   tooltip.show();
@@ -8,6 +9,7 @@ function bandTooltip(hide = false) {
     tooltip.hide();
   }
 }
+// pop up cookies banner
 function cookiesNotice(force = false) {
   const cookies = document.getElementById("cookiesNotice");
   const toast = new bootstrap.Toast(cookies);
@@ -52,6 +54,7 @@ function showBandTooltip() {
   // toast.show();
   cookiesNotice();
 }
+// retrieve given cookie name function
 function getCookie(cName) {
   let name = cName + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
@@ -89,6 +92,7 @@ function deleteCookie(cName, cPath = "/") {
     console.log(`>>> [Sys.cookies]: cookies '${cName}' not found!`);
   }
 }
+// perform changing display language
 function changeLangView(notice = false) {
   // change display langauge to defined (desired) language by user
   const settingElement = document.getElementById("html-tag");
@@ -113,7 +117,7 @@ function changeLangView(notice = false) {
   // get the desired lang first
   if (getCookie("displayLang") === "null") {
     setCookie("displayLang", "en"); // if user is not set their prefer display lang then reset to default display lang (EN)
-    alert("cookies are null");
+    console.log(">>> [Sys.displayLang]: 'displayLang' cookies are null");
   }
   // set the prefered lang at head then
   settingElement.setAttribute("lang", `${getCookie("displayLang")}`);
@@ -195,26 +199,36 @@ function changeLangView(notice = false) {
   if (success == true && notice == true) {
     switch (newLang) {
       case "th": // to TH
-        // alert("เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว");
-        Swal.fire("สำเร็จแล้ว!", "เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว", "success");
+        try {
+          Swal.fire("สำเร็จแล้ว!", "เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว", "success");
+        } catch {
+          alert("เปลี่ยนเป็นภาษาไทยสำเร็จแล้ว");
+        }
         break;
       case "en": // to EN
-        // alert("Language is successfully changed to ENG");
-        Swal.fire(
-          "Success!",
-          "Language is successfully changed to ENGLISH",
-          "success"
-        );
+        try {
+          Swal.fire(
+            "Success!",
+            "Language is successfully changed to ENGLISH",
+            "success"
+          );
+        } catch {
+          alert("Language is successfully changed to ENG");
+        }
         break;
       case "zh": // to ZH
-        // alert("语言已成功更改为中文");
-        Swal.fire("成功!", "语言已成功更改为中文", "success");
+        try {
+          Swal.fire("成功!", "语言已成功更改为中文 (简体)", "success");
+        } catch {
+          alert("语言已成功更改为中文");
+        }
         break;
       default:
         break;
     }
   }
 }
+// set visibility of the whole document
 function setView(view = false) {
   const wholeDoc = document.getElementById("whole-doc");
   if (view == false) {
@@ -225,8 +239,10 @@ function setView(view = false) {
     // wholeDoc.style.display = "block";
   }
 }
+// set display language
 function setLangView(lang = "en", notice = false) {
   setView(false);
+  // prevent the desired language to be null
   if (lang == "null" || lang == null) {
     setCookie("displayLang", `en`);
     console.log(
