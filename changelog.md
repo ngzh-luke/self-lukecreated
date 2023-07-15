@@ -36,3 +36,4 @@ Created on May 22, 2023
 - Minor Changes: change license link to internal file and color of the © texts on July 16, 2023 -> **0.32**
 - Minor Changes: bugs fixed and some improvements on July 16, 2023 -> **0.34**
 - Minor Changes: bug fixed on July 16, 2023 -> **0.35**
+- Minor Changes: add thank you words in 'others' part of the page on July 16, 2023 -> **0.36**
