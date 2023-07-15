@@ -33,3 +33,4 @@ Created on May 22, 2023
 - Minor Changes: decreased the use of cdn for stable result view in CH (lazy fix) and overall improvements on July 15, 2023 -> **0.24**
 - Major Updates: details on home page are added as supposed and overall improvements on July 15, 2023 -> **0.3**
 - Minor Updates: add thank you words at the end of the page on July 15, 2023 -> **0.31**
+- Minor Changes: change license link to internal file and color of the © texts on July 16, 2023 -> **0.32**
