@@ -30,4 +30,5 @@ Created on May 22, 2023
 - Test: personal cdn test on July 15, 2023 -> **0.22a**
 - Minor Updates: reorganized files structure and overall improvements on July 15, 2023 -> **0.22b**
 - Minor Changes: 404 page fully implemented and overall improvements on July 15, 2023 -> **0.23**
+- Minor Changes: decreased the use of cdn for stable result view in CH and overall improvements on July 15, 2023 -> **0.24**
 - Major Updates: _?_ and overall improvements on July _?_, 2023 -> **0.3**
