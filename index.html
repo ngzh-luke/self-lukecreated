@@ -685,64 +685,67 @@
       <!-- <span style="font-weight: bold">App Info</span><br /> -->
     </footer>
     <!-- Cookies notice -->
-    <div class="toast-container bottom-0 end-0 mx-2 my-2" id="cookies-notice">
-      <div
-        class="toast align-items-center"
-        role="alert"
-        aria-live="assertive"
-        aria-atomic="true"
-        data-bs-autohide="false"
-        id="cookiesNotice"
-      >
-        <div class="toast-header">
-          <svg
-            class="bi me-2 opacity-50 theme-icon"
-            width="1em"
-            height="1em"
-            style="color: rgb(196, 46, 176)"
-          >
-            <use href="#gear"></use>
-          </svg>
-          <strong class="me-auto" style="color: green; font-weight: bold">
-            <en-con>Cookies Notice</en-con><zh-con>Cookies 声明</zh-con
-            ><th-con>แจ้งการใช้ Cookies</th-con></strong
-          >
-          <small style="color: red; font-weight: 600"
-            ><th-con>สำคัญ</th-con><en-con>Important!</en-con
-            ><zh-con>重要！</zh-con></small
-          >
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="toast"
-            aria-label="Close"
-            disabled
-          ></button>
-        </div>
-        <div class="toast-body">
-          <en-con
-            >We use necessary cookies and relavant technology only (i.e.
-            language, theme, etc.) and can't be disabled. By using this website,
-            you agree to let us use cookies and relavant technology.</en-con
-          >
-          <zh-con
-            >我们仅使用必要的cookies和相关技术（如语言、主题等），且无法禁用。继续使用本网站即表示您同意我们使用cookies和相关技术。</zh-con
-          >
-          <th-con
-            >เราใช้cookiesและเทคโนโลยีที่คล้ายกันที่จำเป็นเท่านั้น (เช่น ภาษา
-            ธีมและอื่นๆ) ทั้งนี้ท่านไม่สามารถปิดการใช้งานได้
-            โดยการใช้งานเว็ปไซต์นี้ต่อไปเป็นการยินยอมให้เราใช้cookiesและเทคโนโลยีที่คล้ายกัน</th-con
-          >
-
-          <div class="mt-2 pt-2 border-top">
+    <div class="fixed-bottom mx-2 my-5" align="right">
+      <div class="toast-container sticky-bottom" id="cookies-notice">
+        <div
+          class="toast align-items-center align-self-center"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+          data-bs-autohide="false"
+          id="cookiesNotice"
+        >
+          <div class="toast-header">
+            <svg
+              class="bi me-2 opacity-50 theme-icon"
+              width="1em"
+              height="1em"
+              style="color: rgb(196, 46, 176)"
+            >
+              <use href="#gear"></use>
+            </svg>
+            <strong class="me-auto" style="color: green; font-weight: bold">
+              <en-con>Cookies Notice</en-con><zh-con>Cookies 声明</zh-con
+              ><th-con>แจ้งการใช้ Cookies</th-con></strong
+            >
+            <small style="color: red; font-weight: 600"
+              ><th-con>สำคัญ</th-con><en-con>Important!</en-con
+              ><zh-con>重要！</zh-con></small
+            >
             <button
               type="button"
-              class="btn btn-primary btn-sm"
+              class="btn-close"
               data-bs-dismiss="toast"
+              aria-label="Close"
+              disabled
+            ></button>
+          </div>
+          <div class="toast-body" align="center">
+            <en-con
+              >We use necessary cookies and relavant technology only (i.e.
+              language, theme, etc.) and can't be disabled. By using this
+              website, you agree to let us use cookies and relavant
+              technology.</en-con
             >
-              <th-con>รับทราบ</th-con><en-con>Acknowledge</en-con
-              ><zh-con>知道了</zh-con>
-            </button>
+            <zh-con
+              >我们仅使用必要的cookies和相关技术（如语言、主题等），且无法禁用。继续使用本网站即表示您同意我们使用cookies和相关技术。</zh-con
+            >
+            <th-con
+              >เราใช้cookiesและเทคโนโลยีที่คล้ายกันที่จำเป็นเท่านั้น (เช่น ภาษา
+              ธีมและอื่นๆ) ทั้งนี้ท่านไม่สามารถปิดการใช้งานได้
+              โดยการใช้งานเว็ปไซต์นี้ต่อไปเป็นการยินยอมให้เราใช้cookiesและเทคโนโลยีที่คล้ายกัน</th-con
+            >
+
+            <div class="mt-2 pt-2 border-top">
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                data-bs-dismiss="toast"
+              >
+                <th-con>รับทราบ</th-con><en-con>Acknowledge</en-con
+                ><zh-con>知道了</zh-con>
+              </button>
+            </div>
           </div>
         </div>
       </div>

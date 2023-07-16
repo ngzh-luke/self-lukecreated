@@ -38,4 +38,5 @@ Created on May 22, 2023
 - Minor Changes: bug fixed on July 16, 2023 -> **0.35**
 - Minor Changes: add thank you words in `#others` part of the page on July 16, 2023 -> **0.36**
 - Major Changes: add more translation on July 16, 2023 -> **0.37**
-- Major Updates: add Mandarin translation on the `#About` part and some other parts that still needed translation on July _?_, 2023 -> **0.4**
+- Minor Changes: cookies notice toast is now always on the bottom right of the page not matter how user scroll the page on July 16, 2023 -> **0.38**
+- Major Updates: add Mandarin translation on the `#About` part and some other parts that still needed translation and on July _?_, 2023 -> **0.4**
