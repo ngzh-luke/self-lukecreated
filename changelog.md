@@ -41,3 +41,4 @@ Created on May 22, 2023
 - Minor Changes: cookies notice toast is now always on the bottom right of the page not matter how user scroll the page on July 16, 2023 -> **0.38**
 - Minor Updates: add link to testing app along with future projects links, some bugs fixed and improvements on July 17, 2023 -> **0.39**
 - Major Updates: add Mandarin translation on the `#About` part and some other parts that still needed translation, though there is some places that needed to be verified and add translation on July 17, 2023 -> **0.4**
+- Major Updates: add Mandarin translation on the almost every parts left, layout and design adjusted, and future features/services link(s) on July 20, 2023 -> **0.45**

@@ -66,10 +66,11 @@
     id="whole-doc"
     onload="setLangView(`${getCookie('displayLang')}`), cookiesNotice()"
     style="visibility: hidden"
+    class="mx-1 my-2"
   >
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-md border border-top-0 border-2 border-warning"
+      class="navbar navbar-expand-md py-3 border border-2 border-start-0 border-end-0 border-top-0 border-warning"
       aria-label="Offcanvas navbar large"
     >
       <div class="container-fluid">
@@ -137,6 +138,15 @@
                   <zh-con>项目</zh-con>
                 </a>
               </li>
+              <li class="nav-item">
+                <a
+                  class="dropdown-item"
+                  href="https://sponsorme.lukecreated.com"
+                >
+                  <th-con>สปอนเซอร์ผม</th-con><en-con>Sponsor me</en-con>
+                  <zh-con>_?中文?_ [sponsor me]</zh-con>
+                </a>
+              </li>
               <li class="nav-item dropdown">
                 <button
                   class="nav-link dropdown-toggle"
@@ -179,12 +189,11 @@
                   <li>
                     <a
                       class="dropdown-item"
-                      href="https://christmas2022app.lukecreated.com"
+                      href="https://devzone.lukecreated.com"
                       target="_blank"
                     >
-                      <th-con>Christmas 2022 app</th-con
-                      ><en-con>Christmas 2022 app</en-con>
-                      <zh-con>圣诞2022app</zh-con>
+                      <th-con>DevZone</th-con><en-con>DevZone</en-con>
+                      <zh-con>_?中文?_ [DevZone]</zh-con>
                     </a>
                   </li>
                   <li>
@@ -193,18 +202,18 @@
                   <li>
                     <a
                       class="dropdown-item"
-                      href="https://crud.test.lukecreated.com"
+                      href="https://christmas2022app.lukecreated.com"
                       target="_blank"
                     >
-                      <th-con>[ทดสอบ CRUDlinux app]</th-con
-                      ><en-con>[Test CRUDlinux app]</en-con>
-                      <zh-con>_?中文?_ [Test CRUDlinux app]</zh-con>
+                      <th-con>Christmas 2022 app</th-con
+                      ><en-con>Christmas 2022 app</en-con>
+                      <zh-con>圣诞2022app</zh-con>
                     </a>
                   </li>
                 </ul>
               </li>
               <hr class="divider" />
-              <li id="monkeys" class="nav-item d-flex mx-1">
+              <li id="monkeys" class="nav-item d-flex mx-2">
                 <div class="nav-item dropdown">
                   <button
                     class="btn btn-sm btn-warning dropdown-toggle"
@@ -252,7 +261,7 @@
               </li>
               <hr class="divider" />
               <!-- Language-changer -->
-              <li id="language-changer" class="nav-item d-flex">
+              <li id="language-changer" class="nav-item d-flex mx-1">
                 <!-- <button onclick="changeLangView()" class="btn btn-sm btn-success">
                   ไทย/EN/中文
                 </button> -->
@@ -286,7 +295,7 @@
               </li>
               <div class="mx-1 my-1"></div>
               <!-- theme-changer -->
-              <li id="theme-changer" class="nav-item d-flex">
+              <li id="theme-changer" class="nav-item d-flex mx-1">
                 <div class="dropdown bd-mode-toggle">
                   <button
                     class="btn btn-sm btn-info py-1 dropdown-toggle d-flex align-items-center"
@@ -326,7 +335,7 @@
                           <use href="#sun-fill"></use>
                         </svg>
                         <th-con>ธีมสว่าง</th-con><en-con>Light</en-con
-                        ><zh-con>_?中文?_ [light]</zh-con>
+                        ><zh-con>白昼</zh-con>
                         <svg class="bi ms-auto d-none" width="1em" height="1em">
                           <use href="#yin-yang"></use>
                         </svg>
@@ -347,7 +356,7 @@
                           <use href="#moon-stars-fill"></use>
                         </svg>
                         <th-con>ธีมมืด</th-con><en-con>Dark</en-con
-                        ><zh-con>_?中文?_ [dark]</zh-con>
+                        ><zh-con>暗夜</zh-con>
                         <svg class="bi ms-auto d-none" width="1em" height="1em">
                           <use href="#yin-yang"></use>
                         </svg>
@@ -368,7 +377,7 @@
                           <use href="#yin-yang"></use>
                         </svg>
                         <th-con>ธีมอัตโนมัติ</th-con><en-con>Auto</en-con
-                        ><zh-con>_?中文?_ [auto]</zh-con>
+                        ><zh-con>自动</zh-con>
                         <svg class="bi ms-auto d-none" width="1em" height="1em">
                           <use href="#yin-yang"></use>
                         </svg>
@@ -379,7 +388,7 @@
               </li>
               <div class="mx-1 my-1"></div>
               <!-- other setting -->
-              <li class="nav-item d-flex" id="other-setting">
+              <li class="nav-item d-flex mx-1" id="other-setting">
                 <button
                   class="btn btn-sm btn-outline-secondary"
                   onclick="cookiesNotice(true)"
@@ -462,7 +471,9 @@
                 >
                 <zh-con
                   >欢迎到 “LukeCreated” <span style="color: black">|</span>
-                  <span style="color: blue">_?中文?_ 个人网站</span></zh-con
+                  <span style="color: blue"
+                    >让大家印象深刻的个人网页!</span
+                  ></zh-con
                 >
               </p>
             </div>
@@ -531,7 +542,7 @@
           <en-con>About me & Contact me</en-con>
           <zh-con>关于我 & 联系</zh-con>
         </h1>
-        <div class="mx-1 py-2 my-1 px-3" align="center">
+        <div class="mx-1 py-2 my-1 px-3 p-3" align="center">
           <th-con
             >สวัสดีครับทุกท่าน ผมชื่อ Luke (อ่านว่า"ลุค")
             เป็นผู้ก่อตั้งและพัฒนาเว็ปไซต์นี้ครับ ยินดีต้อนรับสู่
@@ -562,7 +573,7 @@
             >，它成立于2023年3月。</zh-con
           >
         </div>
-        <div id="info" class="my-1 mx-1">
+        <div id="info" class="my-1 mx-1 p-4">
           <u
             ><h2 align="start" style="font-weight: bold">
               <th-con>ข้อมูลส่วนบุคคล</th-con><en-con>Info</en-con
@@ -573,7 +584,7 @@
             <li>
               <th-con>จาก: กรุงเทพมหานคร ราชอาณาจักรไทย</th-con
               ><en-con>Based in: Bangkok, Thailand</en-con
-              ><zh-con>来自：曼谷，泰王国 【Thailand in 中文】</zh-con>
+              ><zh-con>来自：曼谷，泰王国 (泰兰德)</zh-con>
             </li>
             <li>
               <th-con
@@ -582,7 +593,7 @@
               ><en-con
                 >Studying at: Faculty of Information and Communication
                 Technology (ICT), Mahidol University</en-con
-              ><zh-con>_?中文?_： 信息通信技術学院 _?中文?_ 玛希隆大学</zh-con>
+              ><zh-con>就读于：玛希隆大学信息与通讯技术学院 (ICT)</zh-con>
             </li>
             <li>
               <th-con>เอก: [Computer Science]</th-con
@@ -607,14 +618,14 @@
             </li>
           </ul>
         </div>
-        <div id="skills" class="my-1 py-2">
+        <div id="skills" class="my-1 py-2 p-4">
           <u
             ><h2 align="start" style="font-weight: bold">
               <th-con>ความสามารถ</th-con><en-con>Skills</en-con
               ><zh-con>技能点</zh-con>
             </h2></u
           >
-          <div id="skills-bars" class="px-1 py-1">
+          <div id="skills-bars" class="col-8 px-3 py-1">
             <th-con>ความสามารถทางภาษาจีน:</th-con
             ><en-con>Mandarin fluentness:</en-con
             ><zh-con>普通话流利度 (汉语):</zh-con>
@@ -674,38 +685,43 @@
             <!-- <li>[None]</li> -->
           </ul>
         </div>
-        <div id="others" class="my-1 py-2 mx-1">
+        <div id="others" class="my-1 py-2 mx-1 p-4">
           <u
             ><h2 align="start" style="font-weight: bold">
               <th-con>อื่นๆ</th-con><en-con>Others</en-con><zh-con>其它</zh-con>
             </h2></u
           >
-          <p class="px-1">
-            <a
-              href="https://github.com/ngzh-luke"
-              target="_blank"
-              type="button"
-              class="btn btn-info"
-              >Github</a
-            >
-            &ensp; &ensp; &ensp;
-            <a
-              href="https://github.com/ngzh-luke/self-lukecreated"
-              target="_blank"
-              type="button"
-              class="btn btn-success"
-              >Source Code</a
-            >
-            &ensp; &ensp; &ensp;
-            <a
-              href="https://github.com/ngzh-luke/self-lukecreated/blob/main/changelog.md"
-              target="_blank"
-              type="button"
-              class="btn btn-warning"
-              >Change log</a
-            >
-          </p>
-          <p class="px-1">
+          <ul class="px-3" style="list-style: none">
+            <li>
+              <a
+                href="https://github.com/ngzh-luke"
+                target="_blank"
+                type="button"
+                class="btn btn-info"
+                >Github</a
+              >
+              &ensp; &ensp; &ensp;
+              <a
+                href="https://github.com/ngzh-luke/self-lukecreated"
+                target="_blank"
+                type="button"
+                class="btn btn-success"
+                >Source Code</a
+              >
+            </li>
+            <!-- &ensp; &ensp; &ensp; -->
+            <br />
+            <li>
+              <a
+                href="https://github.com/ngzh-luke/self-lukecreated/blob/main/changelog.md"
+                target="_blank"
+                type="button"
+                class="btn btn-warning"
+                >Change log</a
+              >
+            </li>
+          </ul>
+          <p class="px-3">
             Bugs report: bugsreport@lukecreated.com &ensp;
             <a
               href="mailto:bugsreport@lukecreated.com"
@@ -715,15 +731,15 @@
               >Report now</a
             >
           </p>
-          <p class="px-1 text-primary">
+          <p class="px-3 text-primary">
             <span style="font-weight: bold"
-              >©Kittipich "Luke" Aiumbhornsin with MIT license -> &ensp;
+              >©Kittipich "Luke" Aiumbhornsin with MIT license: &ensp;
               <a class="btn btn-secondary" href="./LICENSE.md" target="_blank"
                 >License details</a
               ></span
             >
           </p>
-          <p class="px-1">
+          <p class="px-3">
             <th-con
               >ขอขอบคุณ
               <span class="text-info" style="font-weight: bold"
@@ -768,11 +784,10 @@
         >
       </p>
     </div>
-    <hr class="py-3 my-1" />
-    <br />
+    <hr class="py-3 my-3" />
     <!-- Footer -->
     <footer class="px-1 py-1 bg-info fixed-bottom" align="center" id="footer">
-      <small style="color: yellow; font-weight: bold"
+      <small style="color: black; font-weight: bold"
         >©Kittipich "Luke" Aiumbhornsin with
         <a
           class="link-danger"
