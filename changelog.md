@@ -43,3 +43,4 @@ Created on May 22, 2023
 - Major Updates: add Mandarin translation on the `#About` part and some other parts that still needed translation, though there is some places that needed to be verified and add translation on July 17, 2023 -> **0.4**
 - Major Updates: add Mandarin translation on the almost every parts left, layout and design adjusted, and future features/services link(s) on July 20, 2023 -> **0.45**
 - Minor Changes: fix navbar item not align on the same level on July 20, 2023 -> **0.451**
+- Minor Changes: change reserved link and future features links updated on July 20, 2023 -> **0.452**
