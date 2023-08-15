@@ -141,7 +141,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="https://sponsorme.lukecreated.com">
                   <th-con>สปอนเซอร์ผม</th-con><en-con>Sponsor me</en-con>
-                  <zh-con>_?中文?_ [sponsor me]</zh-con>
+                  <zh-con>支持我</zh-con>
                 </a>
               </li>
               <li class="nav-item dropdown">
@@ -277,7 +277,21 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    ไทย/EN/中文
+                    <!-- ไทย/EN/中文 -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#e2a44a"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M16.2 7.8l-2 6.3-6.4 2.1 2-6.3z" />
+                    </svg>
                   </button>
                   <ul class="dropdown-menu">
                     <li>
@@ -451,7 +465,8 @@
               <h1 style="color: black">
                 <span
                   style="
-                    color: rgb(5, 255, 217);
+                    /* color: #05ffd9; */
+                    color: gold;
                     font-weight: bold;
                     font-style: italic;
                     font-size: larger;
@@ -460,7 +475,7 @@
                   LukeCreated</span
                 >
               </h1>
-              <p style="color: whitesmoke; font-weight: bold">
+              <p style="color: whitesmoke; font-weight: bolder">
                 <th-con
                   >ยินดีต้อนรับสู่ "LukeCreated"
                   <span style="color: black">|</span>
@@ -491,21 +506,18 @@
             />
 
             <div class="carousel-caption">
-              <h1
-                id="carousel-caption-name"
-                class="p-3 bg-info rounded-pill bg-opacity-25"
-              >
-                <span style="font-weight: bolder; color: gold">
-                  <th-con style="font-size: normal"
-                    >กิตติพิชญ์ เอี่ยมพรสิน (Luke)</th-con
-                  ><en-con>Kittipich "Luke" Aiumbhornsin</en-con
-                  ><zh-con>倪耿釗（Luke）</zh-con>
+              <h1 id="carousel-caption-job" class="p-2">
+                <span style="font-weight: bold; color: red">
+                  Full Stack Developer<br />Desktop & Mobile Application
+                  Developer
                 </span>
               </h1>
-              <p>
-                <th-con>ใช่แล้ว ผมเอง!</th-con><en-con>Yeah? It's me!</en-con
-                ><zh-con>对，是我！</zh-con>
-              </p>
+              <span style="font-weight: bold">
+                <th-con style="font-size: normal"
+                  >กิตติพิชญ์ เอี่ยมพรสิน (Luke)</th-con
+                ><en-con>Kittipich "Luke" Aiumbhornsin</en-con
+                ><zh-con>倪耿釗（Luke）</zh-con>
+              </span>
             </div>
           </div>
         </div>
@@ -549,15 +561,17 @@
         </h1>
         <div class="mx-1 py-2 my-1 px-3 p-3" align="center">
           <th-con
-            >สวัสดีครับทุกท่าน ผมชื่อ Luke (อ่านว่า"ลุค")
-            เป็นผู้ก่อตั้งและพัฒนาเว็ปไซต์นี้ครับ ยินดีต้อนรับสู่
+            >สวัสดีครับทุกท่าน ผมชื่อ Luke (อ่านว่า"ลุค") เป็น Full Stack
+            Developer, Desktop & Mobile Application Developer
+            อีกทั้งเป็นผู้ก่อตั้งและพัฒนาเว็ปไซต์นี้ครับ ยินดีต้อนรับสู่
             <span class="text-primary" style="font-weight: bold"
               >"LukeCreated"</span
             >
             เว็ปไซต์ส่วนตัวของผมครับ
           </th-con>
           <en-con
-            >Hello guys, I am
+            >Hello guys, I am Full Stack Developer and Desktop & Mobile
+            Application Developer, and this website,
             <span class="text-primary" style="font-weight: bold"
               >"LukeCreated"</span
             >
@@ -568,11 +582,12 @@
             >, it is founded in May 2023.</en-con
           >
           <zh-con
-            >大家好，我是耿釗（Luke）。我是<span
-              class="text-primary"
-              style="font-weight: bold"
+            >大家好，我是耿釗（Luke）。我是 Full Stack Developer and Desktop &
+            Mobile Application Developer，以及是这个网站,
+            <span class="text-primary" style="font-weight: bold"
               >"LukeCreated"</span
-            >的创始人和开发者，我的名字叫Luke！欢迎来到我的个人网站
+            >
+            的创始人和开发者，我的名字叫Luke！欢迎来到我的个人网站
             <span class="text-primary" style="font-weight: bold"
               >"LukeCreated"</span
             >，它成立于2023年3月。</zh-con
@@ -789,7 +804,13 @@
         >
       </p>
     </div>
-    <hr class="py-3 my-4" />
+    <hr class="py-2 my-2" />
+    <!-- stamping below footer -->
+    <div align="center" class="mb-4 pb-4" id="mark-version">
+      <u style="color: royalblue"
+        ><small class="mx-1">[mark:0 | version:0.455]</small></u
+      >
+    </div>
     <!-- Footer -->
     <footer class="px-1 py-1 bg-info fixed-bottom" align="center" id="footer">
       <small style="color: black; font-weight: bold"
