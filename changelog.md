@@ -45,3 +45,4 @@ Created on May 22, 2023
 - Minor Changes: fix navbar item not align on the same level on July 20, 2023 -> **0.451**
 - Minor Changes: change reserved link and future features links updated on July 20, 2023 -> **0.452**
 - Minor Changes: change language changer display, texts updated, add mark and version, and overall improvements on August 15, 2023 -> **0.455**
+- Minor Changes: edit href of projects and minor improvement on September 12, 2023 -> **0.456**
