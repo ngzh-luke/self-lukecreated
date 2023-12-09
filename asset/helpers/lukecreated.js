@@ -1,4 +1,6 @@
 // lukecreated base scripts
+// mk0
+// v0.46
 
 // band tooltip function that is a part of a full band tooltip function
 function bandTooltip(hide = false) {

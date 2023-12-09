@@ -46,3 +46,4 @@ Created on May 22, 2023
 - Minor Changes: change reserved link and future features links updated on July 20, 2023 -> **0.452**
 - Minor Changes: change language changer display, texts updated, add mark and version, and overall improvements on August 15, 2023 -> **0.455**
 - Minor Changes: edit href of projects and minor improvement on September 12, 2023 -> **0.456**
+- Minor Changes: Add CDN to improve performance for some assets on December 9, 2023 -> **0.46**
