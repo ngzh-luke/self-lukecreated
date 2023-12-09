@@ -50,3 +50,4 @@ Created on May 22, 2023
 - Minor Changes: Fixed CORS issue on December 10, 2023 -> **0.461**
 - Minor Changes: Attempted to fix w3 issue on December 10, 2023 -> **0.462**
 - Minor Changes: Attempted to fix w3 icons issue on December 10, 2023 -> **0.463**
+- Minor Changes: Fined tuned of all issues from 0.461 to 0.463 on December 10, 2023 -> **0.464**
