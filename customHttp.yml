@@ -21,5 +21,8 @@ customHeaders:
         value: 'true'
       - key: 'Vary'
         value: 'Origin'
+      - key: 'Referrer-Policy'
+        value: 'no-referrer-when-downgrade'
+
 
 
