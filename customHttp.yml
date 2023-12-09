@@ -10,7 +10,7 @@ customHeaders:
       - key: 'X-Content-Type-Options'
         value: 'nosniff'
       - key: 'Content-Security-Policy'
-        value: "default-src 'self' https://assets.lukecreated.com http://assets.lukecreated.com; style-src 'self' https://assets.lukecreated.com http://assets.lukecreated.com https://fonts.googleapis.com http://www.w3.org 'unsafe-inline'; script-src 'self' https://assets.lukecreated.com http://assets.lukecreated.com 'unsafe-inline'; font-src 'self' https://assets.lukecreated.com http://assets.lukecreated.com data:"
+        value: "default-src 'self' https://assets.lukecreated.com http://assets.lukecreated.com http://www.w3.org https://www.w3.org; style-src 'self' https://assets.lukecreated.com http://assets.lukecreated.com https://fonts.googleapis.com 'unsafe-inline'; script-src 'self' https://assets.lukecreated.com http://assets.lukecreated.com 'unsafe-inline'; font-src 'self' https://assets.lukecreated.com http://assets.lukecreated.com data:"
       - key: 'Access-Control-Allow-Origin'
         value: '*'
       - key: 'Access-Control-Allow-Methods'

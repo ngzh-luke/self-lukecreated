@@ -49,3 +49,4 @@ Created on May 22, 2023
 - Minor Changes: Add CDN to improve performance for some assets on December 9, 2023 -> **0.46**
 - Minor Changes: Fixed CORS issue on December 10, 2023 -> **0.461**
 - Minor Changes: Attempted to fix w3 issue on December 10, 2023 -> **0.462**
+- Minor Changes: Attempted to fix w3 icons issue on December 10, 2023 -> **0.463**
