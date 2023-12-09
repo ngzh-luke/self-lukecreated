@@ -10,19 +10,14 @@ customHeaders:
       - key: 'X-Content-Type-Options'
         value: 'nosniff'
       - key: 'Content-Security-Policy'
-        value: "default-src 'self' assets.lukecreated.com"
+        value: "default-src 'self' assets.lukecreated.com; style-src 'self' assets.lukecreated.com 'unsafe-inline'; script-src 'self' assets.lukecreated.com 'unsafe-inline'; font-src 'self' assets.lukecreated.com data:"
       - key: 'Access-Control-Allow-Origin'
         value: '*'
       - key: 'Access-Control-Allow-Methods'
         value: 'OPTIONS, POST, GET, PUT, DELETE'
-      - key: 'Access-Control-Allow-Headers'
-        value: 'Content-Type'
       - key: 'Access-Control-Allow-Headers'
         value: 'Content-Type, Authorization'
       - key: 'Access-Control-Allow-Credentials'
         value: 'true'
       - key: 'Vary'
         value: 'Origin'
-
-
-
