@@ -12,6 +12,6 @@ customHeaders:
       - key: 'Access-Control-Allow-Origin'
         value: '*'
       - key: 'Access-Control-Allow-Methods'
-        value: 'OPTIONS, POST, GET, PUT, DELETE'
+        value: 'GET'
       - key: 'Access-Control-Allow-Headers'
         value: 'Content-Type'
