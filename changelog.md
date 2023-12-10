@@ -53,3 +53,4 @@ Created on May 22, 2023
 - Minor Changes: Fined tuned of all issues from 0.461 to 0.463 on December 10, 2023 -> **0.464**
 - Minor Changes: Attempted to fix custom font not work on moblie + designing adjusted on December 10, 2023 -> **0.47**
 - Minor Changes: Designing fine tuned on December 10, 2023 -> **0.472**
+- Minor Changes: Fixed designing fine tuning bugs on December 10, 2023 -> **0.475**

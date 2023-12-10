@@ -55,6 +55,12 @@ img {
   margin-bottom: 15%;
 }
 
+#shortcuts th-con,
+#shortcuts en-con,
+#shortcuts zh-con {
+  color: brown;
+}
+
 /* when on mobile */
 @media (max-width: 768px) {
   .carousel-caption th-con,
