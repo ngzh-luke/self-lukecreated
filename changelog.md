@@ -50,7 +50,8 @@ Created on May 22, 2023
 - Minor Changes: Fixed CORS issue on December 10, 2023 -> **0.461**
 - Minor Changes: Attempted to fix w3 issue on December 10, 2023 -> **0.462**
 - Minor Changes: Attempted to fix w3 icons issue on December 10, 2023 -> **0.463**
-- Minor Changes: Fined tuned of all issues from 0.461 to 0.463 on December 10, 2023 -> **0.464**
+- Minor Changes: Fine tuned of all issues from 0.461 to 0.463 on December 10, 2023 -> **0.464**
 - Minor Changes: Attempted to fix custom font not work on moblie + designing adjusted on December 10, 2023 -> **0.47**
 - Minor Changes: Designing fine tuned on December 10, 2023 -> **0.472**
 - Minor Changes: Fixed designing fine tuning bugs on December 10, 2023 -> **0.475**
+- Minor Changes: Attempted to fix custom font not work on moblie, added more to CDN + fine tuned the design on December 10, 2023 -> **0.476**
