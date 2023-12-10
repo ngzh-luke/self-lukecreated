@@ -57,3 +57,4 @@ Created on May 22, 2023
 - Minor Changes: Attempted to fix custom font not work on moblie, added more to CDN + fine tuned the design on December 10, 2023 -> **0.476**
 - Minor Changes: Attempted to fix custom font not work on moblie on December 10, 2023 -> **0.4761**
 - Minor Changes: Attempted to fix custom font not work on moblie on December 10, 2023 -> **0.4762**
+- Minor Changes: Attempted to fix custom font not work on moblie on December 10, 2023 -> **0.4764**

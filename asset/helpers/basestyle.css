@@ -2,46 +2,46 @@
 
 /* include custom fonts */
 /* @import url("https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+SC:wght@200;400;700&family=Noto+Serif+TC:wght@200;400;700&display=swap"); */
-
+/* 
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Regular.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Bold.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-BoldItalic.ttf");
-/* @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-ExtraLight.ttf");
-@import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-ExtraLightItalic.ttf"); */
+@import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-ExtraLight.ttf");
+@import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-ExtraLightItalic.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Italic.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Light.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-LightItalic.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Medium.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-MediumItalic.ttf");
-/* @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBold.ttf");
+@import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBold.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBoldItalic.ttf"); */
 
 @font-face {
   font-family: "Krub";
   src: url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Regular.ttf")
-      format("ttf"),
+      format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Bold.ttf")
-      format("ttf"),
+      format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-BoldItalic.ttf")
-      format("ttf"),
+      format("truetype"),
     /* url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-ExtraLight.ttf")
-      format("ttf"),
+      format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-ExtraLightItalic.ttf")
-      format("ttf"), */
+      format("truetype"), */
       url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Italic.ttf")
-      format("ttf"),
+      format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Light.ttf")
-      format("ttf"),
+      format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-LightItalic.ttf")
-      format("ttf"),
+      format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Medium.ttf")
-      format("ttf"),
+      format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-MediumItalic.ttf")
-      format("ttf");
+      format("truetype");
   /* url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBold.ttf")
-      format("ttf"),
+      format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBoldItalic.ttf")
-      format("ttf"); */
+      format("truetype"); */
   font-weight: normal, bold, light, medium;
   font-style: normal, italic;
   font-display: swap;
