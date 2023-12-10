@@ -15,19 +15,19 @@
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-MediumItalic.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBold.ttf");
 @import url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBoldItalic.ttf"); */
-
+/* 
 @font-face {
   font-family: "Krub";
   src: url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Regular.ttf")
-      format("truetype"),
-    url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Bold.ttf")
+    format("truetype"),
+  url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Bold.ttf")
       format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-BoldItalic.ttf")
       format("truetype"),
-    /* url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-ExtraLight.ttf")
+    url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-ExtraLight.ttf")
       format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-ExtraLightItalic.ttf")
-      format("truetype"), */
+      format("truetype"),
       url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Italic.ttf")
       format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Light.ttf")
@@ -37,15 +37,15 @@
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-Medium.ttf")
       format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-MediumItalic.ttf")
-      format("truetype");
-  /* url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBold.ttf")
+      format("truetype"),
+  url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBold.ttf")
       format("truetype"),
     url("https://assets.lukecreated.com/helpers/fonts/Krub/Krub-SemiBoldItalic.ttf")
-      format("truetype"); */
+      format("truetype");
   font-weight: normal, bold, light, medium;
   font-style: normal, italic;
   font-display: swap;
-}
+} */
 
 body {
   font-family: "Krub", sans-serif, serif;
