@@ -73,8 +73,10 @@
   >
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-md py-3 border border-2 border-start-0 border-end-0 border-top-0 border-warning"
+      class="navbar navbar-expand-md py-3 fixed-top border border-2 border-start-0 border-end-0 border-top-0 border-warning"
       aria-label="Offcanvas navbar large"
+      id="nvb"
+      style="background-color: antiquewhite"
     >
       <div class="container-fluid">
         <a
@@ -84,7 +86,7 @@
           data-bs-placement="bottom"
           data-bs-title="Click to go to Home"
           id="band"
-          style="font-weight: bolder"
+          style="font-weight: bolder; color: navy"
           >LukeCreated</a
         >
         <button
@@ -94,6 +96,7 @@
           data-bs-target="#offcanvasNavbar2"
           aria-controls="offcanvasNavbar2"
           aria-label="Toggle navigation"
+          style="background-color: skyblue"
         >
           <span class="navbar-toggler-icon"> </span>
         </button>
@@ -438,6 +441,9 @@
         </div>
       </div>
     </nav>
+    <br />
+    <hr class="mb-1 pd-2" />
+    <br />
     <header class="mx-2 my-2">
       <div
         id="carouselCaptions"
@@ -526,30 +532,34 @@
         <th-con>ก่อตั้ง มีนาคม ๒๕๖๖</th-con><en-con>EST. March, 2023</en-con
         ><zh-con>东部时间2023年3月</zh-con>
       </h2>
-      <h3 id="carousel-caption-job" class="p-2">
-        <span style="font-weight: bold; color: red">
-          Full Stack Developer<br />Desktop & Mobile Application Developer
-        </span>
-      </h3>
-      <p style="color: darkcyan; font-weight: bolder">
-        <th-con
-          >ยินดีต้อนรับสู่ "LukeCreated"
-          <span style="color: black">|</span>
-          <span style="color: blue"
-            >เว็ปไซต์ส่วนตัวที่ทุกคนประทับใจ</span
-          ></th-con
-        >
-        <en-con
-          >Welcome to "LukeCreated" <span style="color: black">|</span>
-          <span style="color: blue"
-            >Personal website that everyone impressed!</span
-          ></en-con
-        >
-        <zh-con
-          >欢迎到 “LukeCreated” <span style="color: black">|</span>
-          <span style="color: blue">让大家印象深刻的个人网页!</span></zh-con
-        >
-      </p>
+      <div align="center">
+        <h3 class="p-2">
+          <span style="font-weight: bold; color: red">
+            Full Stack Developer<br />Desktop & Mobile Application Developer
+          </span>
+        </h3>
+        <h5 style="color: darkcyan; font-weight: bolder">
+          <th-con
+            >ยินดีต้อนรับสู่ "LukeCreated"
+            <span style="color: black">|</span>
+            <span style="color: rgb(120, 113, 238)"
+              >เว็ปไซต์ส่วนตัวที่ทุกคนประทับใจ</span
+            ></th-con
+          >
+          <en-con
+            >Welcome to "LukeCreated" <span style="color: black">|</span>
+            <span style="color: rgb(120, 113, 238)"
+              >Personal website that everyone impressed!</span
+            ></en-con
+          >
+          <zh-con
+            >欢迎到 “LukeCreated” <span style="color: black">|</span>
+            <span style="color: rgb(120, 113, 238)"
+              >让大家印象深刻的个人网页!</span
+            ></zh-con
+          >
+        </h5>
+      </div>
       <hr class="my-1 mx-5 px-3 border border-5 border-success rounded-top-0" />
       <hr />
     </header>
@@ -815,7 +825,7 @@
     <!-- stamping below footer -->
     <div align="center" class="mb-4 pb-2" id="mark-version">
       <u style="color: royalblue"
-        ><small class="mx-1">[mark:0 | version:0.47]</small></u
+        ><small class="mx-1">[mark:0 | version:0.472]</small></u
       >
       <br />
     </div>

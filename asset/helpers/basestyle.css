@@ -49,6 +49,12 @@ img {
   color: #121283dc;
   color: red;
 } */
+
+#nvb {
+  background-color: antiquewhite;
+  margin-bottom: 15%;
+}
+
 /* when on mobile */
 @media (max-width: 768px) {
   .carousel-caption th-con,
