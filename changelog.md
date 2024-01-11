@@ -59,4 +59,5 @@ Created on May 22, 2023
 - Minor Changes: Attempted to fix custom font not work on moblie on December 10, 2023 -> **0.4762**
 - Minor Changes: Attempted to fix custom font not work on moblie on December 10, 2023 -> **0.4764**
 - Minor Changes: Attempted to fix custom font not work on moblie on December 10, 2023 -> **0.4765**
-- Minor Changes: Attempted to fix custom font not work on moblie on December 10, 2023 -> **0.4767**
+- Minor Changes: Fixed custom font not work on moblie on December 10, 2023 -> **0.4767**
+- Minor Changes: Added services and logos + overall improvement on January 11, 2024 -> **0.48**

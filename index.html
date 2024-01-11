@@ -66,6 +66,20 @@
     <script src="https://assets.lukecreated.com/helpers/lukecreated/personal-web/lukecreated@m0v0.46/lukecreated.js"></script>
   </head>
 
+  <style>
+    #logo {
+      height: 1.8rem;
+    }
+    #logo-inside {
+      height: 3.9rem;
+      max-height: 4.6rem;
+    }
+    @media (min-width: 600px) {
+      #logo {
+        max-height: 2rem;
+      }
+    }
+  </style>
   <body
     id="whole-doc"
     onload="setLangView(`${getCookie('displayLang')}`), cookiesNotice()"
@@ -87,9 +101,9 @@
           data-bs-placement="bottom"
           data-bs-title="Click to go to Home"
           id="band"
-          style="font-weight: bolder; color: navy"
-          >LukeCreated</a
         >
+          <img type="image/svg+xml" src="/asset/images/logo.svg" id="logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -114,7 +128,11 @@
               id="offcanvasNavbar2Label"
               style="font-family: Krub, sans-serif; font-weight: bold"
             >
-              LukeCreated
+              <img
+                type="image/svg+xml"
+                src="/asset/images/logo.svg"
+                id="logo-inside"
+              />
             </h3>
             <button
               type="button"
@@ -133,10 +151,16 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#About">
+                <a class="nav-link" href="#intro">
                   <th-con>เกี่ยวกับ/ติดต่อเรา</th-con
                   ><en-con>About/Contact</en-con>
                   <zh-con>关于/联系</zh-con>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#info">
+                  <th-con>บริการ</th-con><en-con>Services</en-con>
+                  <zh-con>我可以...</zh-con>
                 </a>
               </li>
               <li class="nav-item">
@@ -550,7 +574,7 @@
         <div align="center">
           <h3 class="p-2">
             <span style="font-weight: bold; color: red">
-              Full Stack Developer<br />Desktop & Mobile Application Developer
+              Full Stack Developer,<br />Desktop & Mobile Application Developer
             </span>
           </h3>
           <h5 style="color: darkcyan; font-weight: bolder">
@@ -592,35 +616,26 @@
         <div class="mx-1 py-2 my-1 px-3 p-3" align="center">
           <th-con
             >สวัสดีครับทุกท่าน ผมชื่อลุค (Luke) เป็น Full Stack Developer,
-            Desktop & Mobile Application Developer
-            อีกทั้งเป็นผู้ก่อตั้งและพัฒนาเว็ปไซต์นี้ครับ ยินดีต้อนรับสู่
+            Desktop & Mobile Application Developer ยินดีต้อนรับทุกท่านสู่
             <span class="text-primary" style="font-weight: bold"
               >"LukeCreated"</span
             >
-            เว็ปไซต์ส่วนตัวของผมครับ
+            _?中文?_
           </th-con>
           <en-con
             >Hello guys, I am Full Stack Developer and Desktop & Mobile
-            Application Developer, and this website,
+            Application Developer. Welcome to my personal website,
             <span class="text-primary" style="font-weight: bold"
               >"LukeCreated"</span
-            >
-            founder and developer whose name is Luke! Welcome to my personal
-            website,
-            <span class="text-primary" style="font-weight: bold"
-              >"LukeCreated"</span
-            >, it is founded in May 2023.</en-con
+            >. I offer services like develop a mobile, desktop, and web app, and
+            even tutoring! Feel free to contact me!</en-con
           >
           <zh-con
             >大家好，我是耿釗（Luke）。我是 Full Stack Developer and Desktop &
-            Mobile Application Developer，以及是这个网站,
+            Mobile Application Developer. 欢迎来到我的个人网站:
             <span class="text-primary" style="font-weight: bold"
               >"LukeCreated"</span
-            >
-            的创始人和开发者，我的名字叫Luke！欢迎来到我的个人网站
-            <span class="text-primary" style="font-weight: bold"
-              >"LukeCreated"</span
-            >，它成立于2023年3月。</zh-con
+            >_?中文?_</zh-con
           >
         </div>
         <div id="info" class="my-1 mx-1 p-4">
@@ -673,6 +688,29 @@
             </li>
           </ul>
         </div>
+
+        <div id="services" class="mx-1 p-4">
+          <u
+            ><h2 align="start" style="font-weight: bold; color: goldenrod">
+              <th-con>บริการ</th-con>
+              <en-con>Services offer</en-con>
+              <zh-con>_?中文?_</zh-con>
+            </h2></u
+          >
+
+          <ul>
+            <li>Tutoring</li>
+            <li>
+              Develop
+              <ul>
+                <li>Web app</li>
+                <li>Mobile app</li>
+                <li>Desktop app</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
         <div id="skills" class="my-1 py-2 p-4">
           <u
             ><h2 align="start" style="font-weight: bold; color: goldenrod">
@@ -736,7 +774,9 @@
           </div>
           <ul>
             <li>Coding in: Python, JS, HTML&CSS, SQL</li>
-            <li>Framework: Flask, Express.js</li>
+            <li>
+              Framework/Tools: Flask, Express.js, Flutter, Bootstrap5, W3CSS
+            </li>
             <!-- <li>[None]</li> -->
           </ul>
         </div>
@@ -843,7 +883,7 @@
     <!-- stamping below footer -->
     <div align="center" class="mb-4 pb-2" id="mark-version">
       <u style="color: royalblue"
-        ><small class="mx-1">[mark:0 | version:0.4767]</small></u
+        ><small class="mx-1">[mark:0 | version:0.48]</small></u
       >
       <br />
     </div>
